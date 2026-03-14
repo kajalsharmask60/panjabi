@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Punjabi Tadka Restaurant</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#fff8f0;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#6a0000,#b8860b);
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+font-family:'Playfair Display',serif;
+font-size:40px;
+letter-spacing:2px;
+}
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+.hero{
+height:80vh;
+background:url('https://images.unsplash.com/photo-1604908176997-431db33e3f88') center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:48px;
+background:rgba(0,0,0,0.6);
+padding:20px;
+border-radius:10px;
+}
+
+.section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+color:#800000;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+}
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+overflow:hidden;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+}
+
+.card-content h3{
+margin:0;
+color:#800000;
+}
+
+.price{
+color:#b8860b;
+font-weight:bold;
+margin-top:5px;
+}
+
+.reservation{
+background:#6a0000;
+color:white;
+padding:60px 10%;
+}
+
+form{
+display:grid;
+gap:15px;
+max-width:500px;
+margin:auto;
+}
+
+input,textarea,button{
+padding:12px;
+border:none;
+border-radius:5px;
+}
+
+button{
+background:#d4af37;
+color:black;
+font-weight:bold;
+cursor:pointer;
+}
+
+.map{
+width:100%;
+height:400px;
+border:0;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+footer{
+background:#222;
+color:#ccc;
+text-align:center;
+padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Punjabi Tadka Restaurant</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#reserve">Reservation</a>
+<a href="#location">Location</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Authentic Punjabi Flavours Straight From the Heart</h2>
+</section>
+
+<section class="section" id="menu">
+<h2 class="section-title">Our Special Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+<div class="card-content">
+<h3>Butter Chicken</h3>
+<p>Creamy tomato gravy Punjabi style</p>
+<div class="price">₹320</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1625944525533-473f1c6b7c3a">
+<div class="card-content">
+<h3>Paneer Tikka</h3>
+<p>Charcoal grilled cottage cheese</p>
+<div class="price">₹260</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1604909052743-94e838986d24">
+<div class="card-content">
+<h3>Dal Makhani</h3>
+<p>Slow cooked black lentils</p>
+<div class="price">₹220</div>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1613145997970-db84a7975fbb">
+<div class="card-content">
+<h3>Tandoori Roti</h3>
+<p>Traditional clay oven bread</p>
+<div class="price">₹40</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="reservation" id="reserve">
+<h2 class="section-title">Book a Table</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Email">
+<input type="tel" placeholder="Phone Number" required>
+<input type="date" required>
+<textarea placeholder="Special Request"></textarea>
+<button type="submit">Reserve Table</button>
+</form>
+
+</section>
+
+<section id="location">
+<h2 class="section-title">Find Us</h2>
+
+<iframe class="map"
+src="https://maps.google.com/maps?q=punjabi%20restaurant&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919999999999">WhatsApp</a>
+
+<footer>
+© 2026 Punjabi Tadka Restaurant | Authentic Punjabi Taste
+</footer>
+
+</body>
+</html>
